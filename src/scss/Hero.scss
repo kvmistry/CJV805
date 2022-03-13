@@ -1,0 +1,12 @@
+.hero {
+    // display: flex;
+    padding-top: 10px;
+    height: 50vh;
+    z-index: 0;
+    overflow: hidden;
+    .myswiper {
+        padding-top: 10px;
+        height: 250px; 
+        z-index: 0;       
+    }
+}

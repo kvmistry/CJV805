@@ -1,0 +1,45 @@
+.filter{
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 20%;
+    height: auto;
+    .map{
+        width: auto;
+        height: 100px;
+        position: relative;
+        // text-align: center;
+        .button{
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            right: 36%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+       
+    }
+    .others{
+        padding-top: 20px;
+    
+    .filter1{
+        margin-top: 20px    ;
+        ul{
+            li{
+                padding: 6px;
+                list-style-type: none;
+            }
+        }
+
+    }
+    .filter2{
+        ul{
+            li{
+                padding: 6px;
+                list-style-type: none;
+            }
+        }
+
+    }
+}
+padding-bottom: 20px;
+}

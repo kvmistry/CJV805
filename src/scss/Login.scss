@@ -1,0 +1,47 @@
+.loginform {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    border: 1px;
+    padding-bottom: 50px;
+    .logindetails {
+        text-align: center;
+        align-items: center;
+        border-style: solid;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: rgb(137, 195, 230);
+        width: 300px;
+        height: 400px;
+        .form-outline {
+            .form-control {
+                width: 200px;
+                border: solid;
+                border-color: lightgray;
+                border-radius: 100px;
+                padding: 3px;
+            }
+        }
+        .text-center {
+            .btn{
+                width: 100px;
+                height:40px;
+                border: solid;
+                border-color: lightgray;
+                border-radius: 100px;
+                padding: 3px;
+            }
+        }
+        .d-flex{
+            .btn{
+                width: 80px;
+                height:30px;
+                border: solid;
+                border-color: lightgray;
+                border-radius: 100px;
+                padding: 3px;
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.footer {
+    background-color: lightgray;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .col {
+            margin-top: 5px;
+            justify-content: center;
+            padding-left: 30px;
+            .copyright {
+                margin-top: 14px;
+                margin-bottom: 0;
+                font-size: 13px;
+                opacity: 0.6;
+            }
+            h3 {
+                padding-left: 27px;
+            }
+            a {
+                padding: 5px;
+            }
+            ul {
+                li {
+                    list-style-type: none;
+                    color: white;
+                }
+                display: block;
+                // float: left;
+            }
+        }
+        .icons {
+            margin-top: 34px;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,230 @@
+{
+  "property_list": [
+    {
+      "id": 1,
+      "name": "Condoniums",
+      "description": "Luxury condominiums with exquisite designs and high-end finishes with modern appliances",
+      "img": "http://www.rebate4u.ca/rebate-blog/wp-content/uploads/2018/11/condo.jpg",
+      "list": [
+        {
+          "id": 1,
+          "name": "Merton Yonge Condominiums",
+          "price": 215.45,
+          "address": "5095 Yonge Street, Toronto, Ontario M2N 6Y7",
+          "rating": 9.1,
+          "img": "https://cdn-res.keymedia.com/cms/images/ca/155/0348_637266014596467663.jpg"
+        },
+        {
+          "id": 2,
+          "name": "The Palace Pier",
+          "price": 154.75,
+          "address": " 2045 Lake Shore Boulevard West ",
+          "rating": 8.5,
+          "img": "https://images.squarespace-cdn.com/content/v1/55ba824ee4b0acc41761e610/1541701328371-YGB4OW5TOX5S0S0KEOE2/renovating+your+condo.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Ten York",
+          "price": 132.49,
+          "address": "108-1450 Boulevard Rene Levesque Ouest, Montreal, Quebec",
+          "rating": 7.9,
+          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtGolltu8fTHK5btI9cMCUuPxS5BaWoAUnfg&usqp=CAU"
+        },
+        {
+          "id": 4,
+          "name": "Waterpark City",
+          "price": 255.55,
+          "address": "320 Fifth Avenue North, Saskatoon, Saskatchewan, Canada",
+          "rating": 6.2,
+          "img": "https://www.brickunderground.com/sites/default/files/styles/blog_primary_image/public/blog/images/190501Tribeca111MurrayStMAINPIC.jpg"
+        },
+        {
+          "id": 5,
+          "name": "Absolute World",
+          "price": 95.49,
+          "address": "50–60 Absolute Avenue, Mississauga, Ontario, Canada",
+          "rating": 9.3,
+          "img": "https://www.vanderbiltpm.com/wp-content/uploads/2017/05/how-to-choose-the-right-condo.jpg"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Resort",
+      "description": "For relaxation, especially providing rest and recreation facilities for vacationers",
+      "img":"https://www.planetware.com/wpimages/2021/07/maldives-best-all-inclusive-resorts-hurawalhi-island-resort-villa.jpg",
+      "list": [
+        {
+          "id": 1,
+          "name": "Haven Royale Resort",
+          "price": 95.65,
+          "address": "1746 Ward Road, Toronto",
+          "rating": 9.7,
+          "img": "https://www.beaches.com/blog/content/images/2021/03/Beaches-Turks-Caicos-Overview.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Resort Tropicana",
+          "price": 125.45,
+          "address": "1259 Bloor Street, Daysland, Alberta(AB), T0B 1A0",
+          "rating": 9.3,
+          "img": "https://images.ctfassets.net/gxwgulxyxxy1/3PKJ0lcc5qQaUBJUeFK2pT/efe18f9f9af19ddad3254544ec9d2ed1/e9fe174f-a6ea-41b1-b77a-879c3b71bd15.lg1.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Blissview Resort",
+          "price": 95.95,
+          "address": "665 Glover Road, Langley, British Columbia(BC), V3A 4P6",
+          "rating": 8.9,
+          "img": "data:image/jpeg;base64,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"
+        },
+        {
+          "id": 4,
+          "name": "Seagull Resort",
+          "price": 128.45,
+          "address": "3703 Algonquin Blvd, Timmins, Ontario(ON), P4N 1C3",
+          "rating": 7.8,
+          "img": "https://media-cdn.tripadvisor.com/media/photo-s/17/d9/5c/ec/melia-caribe-beach-resort.jpg"
+        },
+        {
+          "id": 5,
+          "name": "Seacoasts Resort",
+          "price": 154.56,
+          "address": "4188 Balmy Beach Road, Owen Sound, Ontario(ON), N4K 2N7",
+          "rating": 8.7,
+          "img": "https://d1el5jddkxvjyd.cloudfront.net/viceroyhotelsandresorts.com-2109743334/cms/cache/v2/6130189f3eb1f.jpg/1920x1080/fit/80/a4ea12931c990e242201612729ffac49.jpg"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Apartments",
+      "description": "Rent an apartment by the beach for a week",
+      "img":"https://www.phillyaptrentals.com/wp-content/uploads/2020/12/apartment-building-what-makes-good-apartment-building-scaled.jpg",
+      "list": [
+        {
+          "id": 1,
+          "name": "Relaxing Apartments",
+          "price": 50.55,
+          "address": "1577 A Avenue, Edmonton, Alberta(AB), T5J 0K7",
+          "rating": 9.6,
+          "img": "data:image/jpeg;base64,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"
+        },
+        {
+          "id": 2,
+          "name": "Luxe Living",
+          "price": 90.45,
+          "address": "4594 Cassells St, North Bay, Ontario(ON), P1B 2Y7",
+          "rating": 8.7,
+          "img": "https://www.towersrealty.ca/wp-content/uploads/2020/06/Owen-Apartments-Studio-Apartment-4-of-8-web-scaled.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Welcome Retreat",
+          "price": 94.75,
+          "address": "4554 Lynden Road, Cookstown, Ontario(ON), L0L 1L0",
+          "rating": 8.5,
+          "img": "https://media-cdn.tripadvisor.com/media/photo-s/10/93/6f/a3/speke-apartments.jpg"
+        },
+        {
+          "id": 4,
+          "name": "Safe N Secure Living",
+          "price": 75.90,
+          "address": "837 40th Street, Calgary, Alberta(AB), T2E 6X1",
+          "rating": 7.4,
+          "img": "https://s3.amazonaws.com/lws_lift/homestead/images/gallery/512/1595933734_build_frnt_ext.jpg"
+        },
+        {
+          "id": 5,
+          "name": "The Comfort Court",
+          "price": 105.6,
+          "address": "3803 Kinchant St, Chilliwack, British Columbia(BC), V2P 2S6",
+          "rating": 8.2,
+          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_8VBOjkAvNIy5IT08oDyrP71EOJAx-4yS0w&usqp=CAU"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Hotels",
+      "description": "Lodging, food and other services for travelers and other paying guests",
+      "img":"https://www.1hotels.com/sites/default/files/styles/mega_menu_image_retina/public/2021-03/1_hotel01.jpg?h=a49d782d&itok=jEfYexKd",
+      "list": [
+        {
+          "id": 1,
+          "name": "The New View",
+          "price": 45.60,
+          "address": "3831 Pine Street, Alder Flats, Alberta(AB), T0C 0A0",
+          "rating": 8.2,
+          "img": "https://media-cdn.tripadvisor.com/media/photo-s/1c/db/c7/dc/hotel-exterior.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Lake Place Inn",
+          "price": 75.5,
+          "address": "4477 James Street, Fauquier, Ontario(ON), P0L 1G0",
+          "rating": 8.9,
+          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzWcSzU3qIYAzYBpiK3C5PLSnyljzGme2Zvw&usqp=CAU"
+        },
+        {
+          "id": 3,
+          "name": "The Fresco Hotel",
+          "price": 75.95,
+          "address": "646 90th Avenue, Brooks, Alberta(AB), T0J 0J0",
+          "rating": 7.9,
+          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDpADTtCm2ttQ15RpNK_TBdUNQGfjJ2I3sBw&usqp=CAU"
+        },
+        {
+          "id": 4,
+          "name": "Four Seasons",
+          "price": 95.65,
+          "address": "1034 Hardy Street, Kelowna, British Columbia(BC), V1Y 8H2",
+          "rating": 9.1,
+          "img": "https://www.peninsula.com/en/-/media/homepage---andy/the-peninsula-bangkok_the-pool-11_1920.jpg"
+        },
+        {
+          "id": 5,
+          "name": "Golden Cherry Hotel",
+          "price": 65.45,
+          "address": "2271 Acton Avenue, Toronto, Ontario(ON), M3H 4J1",
+          "rating": 8.8,
+          "img": "https://media.hrs.com/media/image/8c/c2/11/The_Principal_Manchester-Manchester-Junior-Suite-67582_600x600@2x.jpg"
+        }
+      ]
+    }
+  ],
+  "best_seller": [
+    {
+      "id": 1,
+      "address": "3319 Albert Street",
+      "name": "Seagull Resort",
+      "price": 45.95,
+      "img2":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3cUBGzvekkmtKoLqEMENTBxsSDtzxnPWF_w&usqp=CAU",
+      "img1":"https://content.r9cdn.net/rimg/himg/f7/ad/6a/arbisoftimages-352440-_FCH2112D.Beach.Resort-image.png?crop=true&width=500&height=350"
+    },
+    {
+      "id": 2,
+      "address": "2271 Acton Avenue",
+      "name": "Golden Cherry Hotel",
+      "price": 65.67,
+      "img1":"https://cdn.galaxy.tf/thumb/sizeW1920/uploads/2s/cms_image/001/578/605/1578605133_5e179a4d453f7-thumb.jpg",
+      "img2":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_Y9fO0Lm7IiOFFuPEq4BnSNL4OgEba07LYA&usqp=CAU"
+    },
+    {
+      "id": 3,
+      "address": "1894 Queens Sq",
+      "name": "Merton Yonge Condominiums",
+      "price": 109.99,
+      "img1":"https://www.kiavi.com/hubfs/Imported_Blog_Media/Condo_Maintainence-2-2.jpg",
+      "img2":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjKKDczIoH1napfX5NzFdPRTnSNx0sM5IB5Q&usqp=CAU"
+    },
+    {
+      "id": 4,
+      "address": "1710 Port Washington Road",
+      "name": "Welcome Retreat",
+      "price": 125.85,
+      "img1":"https://www.capreit.ca/wp-content/uploads/2021/09/South-Garden-Apartments-North-York-ON-Home-Office.jpg",
+      "img2":"https://images.rentals.ca/property-pictures/medium/waterloo-on/548642/apartment-6231275.jpg"
+    }
+  ]
+}

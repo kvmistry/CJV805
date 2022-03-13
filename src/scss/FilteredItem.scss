@@ -1,0 +1,34 @@
+.filtered{
+    position: relative;
+    width: 80%;
+    margin-left: 10px;
+    margin-top: 10px;
+    .sort{
+       width: 100%;
+       height: 100px;
+       h3{
+           padding-left: 10px;
+        //    padding-top: 5px;
+       }
+       .sortby{
+           display: flex;
+           padding-left: 10px;
+            .para{
+                    margin-top: 1px;
+            }
+            .btn{
+                margin-left: 7px;
+                margin-right: 7px;
+                padding-left: 7px;
+                padding-right: 7px;
+            }
+
+       }
+    
+    }
+    .result{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
