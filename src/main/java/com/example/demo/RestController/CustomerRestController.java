@@ -17,7 +17,7 @@ import com.example.demo.document.Login;
 import com.example.demo.service.CustomerService;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/")
 public class CustomerRestController {
 	@Autowired
 	CustomerService customerService;

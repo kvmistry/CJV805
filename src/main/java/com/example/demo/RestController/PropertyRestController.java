@@ -20,7 +20,7 @@ import com.example.demo.document.Property;
 import com.example.demo.service.PropertyService;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/")
 public class PropertyRestController {
 
 	@Autowired
