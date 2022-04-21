@@ -12,10 +12,10 @@ const Resort = (props) => {
           <div className='col-4'>
             <div className="card-body">
               <div className='name'>
-                <h5 className="card-title">{props.element.name}</h5><p>{props.element.address}</p>
+                <h5 className="card-title">{props.element.name}</h5><p>{props.element.location.streetAddress}</p>
               </div>
               <div className='rating'>
-                <span className="badge bg-success">{props.element.rating}</span>
+                <span className="badge bg-success">6.3</span>
                 <span><b>Fabulous</b></span>
               </div>
             </div>

@@ -30,7 +30,7 @@ const FilteredItem = (props) => {
                 </div>
             </div>
             <div className='result'>
-                {props.data[0].list?.map((element, key) => (
+                {props.data?.map((element, key) => (
                     <div key={key}>
                         <Resort element={element}/>
                     </div>

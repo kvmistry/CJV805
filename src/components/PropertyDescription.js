@@ -19,7 +19,7 @@ const PropertyDescription = (props) => {
         </div>
         <div className='information'>
           <div className='location'>
-            <img src={props.img2} alt='location' />
+            {/* <img src={props.img2} alt='location' /> */}
             <p>	 {props.address}</p>
             <hr />
           </div>

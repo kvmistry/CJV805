@@ -9,18 +9,26 @@ import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 const PropertyListing = () => {
   let params = useParams();
-  const [data, setData] = useState([{
-    "id": 0,
-    name: "",
-    description: "",
-    img: "",
-    list: []
-  }
-  ])
+  const [data, setData] = useState([  {id: "625ca0f1ac4e5248defdae18",
+  img: "hotel1.jpg",
+  title: "Hotel Marriott",
+  description: "3 star hotel",
+  price: "$300",
+  location: {
+      streetAddress: "1 Dufferin St",
+      city: "Toronto",
+      state: "Ontario",
+      country: "Canada",
+      zip: "L2R1T9"
+  },
+  type: "hotel",
+  rules: "Pets allowed, Smoking allowed in smoking room only",
+  amenities: "Wifi, Mini Bar,In house Laundary, Buffet",
+  bestseller: true
+      } ])
   useEffect(() => {
-    fetch("http://localhost:5000/property_list").then(response => response.json()).then(json => {
-      let abc = json.filter((element) => element.id == parseInt(params.variable))
-      setData(abc);
+    fetch("http://localhost:5005/properties/"+params.variable).then(response => response.json()).then(json => {
+      setData(json);
     }).catch(err => {
       console.log(err);
     })
