@@ -1,11 +1,13 @@
 package com.example.demo.RestController;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -18,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.document.Property;
 import com.example.demo.service.PropertyService;
-
+@CrossOrigin
 @RestController
 @RequestMapping("/")
 public class PropertyRestController {
@@ -72,7 +74,32 @@ public class PropertyRestController {
 			return ResponseEntity.of(Optional.of(propertyService.getPropertiesByBestseller(bestseller)));
 		}
 	}
-
+	@GetMapping("/property/description")
+	public 	ResponseEntity<List<Property>> getAllPropertyBySection(){
+		List<Property> property=new ArrayList();
+		boolean  flag;
+		for(Property p:propertyService.getProperties()) {
+			if(property.isEmpty()) {
+				property.add(p);
+			}else {
+				flag = true;
+				for(Property p2 : property) {
+					if(p.getType().toLowerCase().equals(p2.getType().toLowerCase())) {
+						flag = false;
+						break;
+					}
+			}
+				if(flag) {
+					property.add(p);
+				}
+			}
+		}
+		if(property.isEmpty()) {
+			return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+		}else {
+			return ResponseEntity.of(Optional.of(property));
+		}
+	}
 	@GetMapping("/property/title")
 	public ResponseEntity<List<Property>> getPropertyByTitle(@RequestParam(defaultValue = "empty") String title,
 			@RequestParam(defaultValue = "empty") String type) {
