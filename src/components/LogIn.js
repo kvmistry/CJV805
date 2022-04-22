@@ -2,32 +2,42 @@ import React from 'react'
 import "../scss/Login.scss"
 import {useState} from 'react'
 import {useNavigate} from 'react-router-dom'
+import SetCookies from '../cookies/SetCookies'
 const LogIn = () => {
     const navigate = useNavigate()
     const [email,setUser]=useState()
+    const [login, setLogin] = useState(true)
     const [password,setPassword]=useState()
-    const handleClick = ()=>{
-        let result = {email,password}
-        fetch("http://localhost:5005/customer/login",{
-            method : "POST",
-            headers: {
-                'Content-Type': 'application/json'
-              }, 
-              body: JSON.stringify(result)
-        }).then((response)=>{
-            if(response.status===200){
-                navigate('/')
-            }else{
-                console.log('aaaaaaaa----------',response.status);
+    const handleClick = () => {
+     
+        let result = { email, password }
+        fetch("http://localhost:5005/customer/login", {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(result)
+        }).then(response => {
+            if (response.status !== 200) {
+                setLogin(false)
             }
-        })
+            else {
+                response.json().then((json)=>{
+                    SetCookies.set("login", json.id, { "path": "/" })
+                    console.log('wwwwwwwwwww',SetCookies.get('login'));
+                    navigate('/');
+                })
+               
+            }
+
+        }
+
+        )
     }
 
     return (
         <div className='loginform'>
             <div className='logindetails'>
                 <h3>LOGIN</h3>
-                <p>Please login to your account</p>
+                <p>Please login to your account    "</p>
 
                 <div className="form-outline mb-4">
                 <label className="form-label" for="form2Example11">Username</label><br/>

@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 import PropertyList from '../components/PropertyList';
 import BestSellerList from '../components/BestSellerList';
 const Home = () => {
+  const[data,setData] = useState("")
   return (
     <div className='Home'>
-      <header><Header /></header>
+      <header><Header setData={setData} /></header>
       <main>
         <Hero />
         <div className='property'>

@@ -7,36 +7,36 @@ import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 const PropertyDescriptionPage = () => {
   let params = useParams();
-  const [data, setData] = useState([{
-    id: "625ca0f1ac4e5248defdae18",
-    img: "hotel1.jpg",
-    title: "Hotel Marriott",
-    description: "3 star hotel",
-    price: "$300",
+  const[data,setData] = useState("")
+  const [data1, setData1] = useState([{
+    id: "",
+    img: "",
+    title: "",
+    description: "",
+    price: "",
     location: {
-      streetAddress: "1 Dufferin St",
-      city: "Toronto",
-      state: "Ontario",
-      country: "Canada",
-      zip: "L2R1T9"
+      streetAddress: "",
+      city: "",
+      state: "",
+      country: "",
+      zip: ""
     },
-    type: "hotel",
-    rules: "Pets allowed, Smoking allowed in smoking room only",
-    amenities: "Wifi, Mini Bar,In house Laundary, Buffet",
+    type: "",
+    rules: "",
+    amenities: "",
     bestseller: true
   }])
   useEffect(() => {
-    fetch("http://localhost:5005/properties/" + params.name).then(response => response.json()).then(json => {
-
-      setData(json);
+    fetch("http://localhost:5005/property/title?title="+params.name).then(response => response.json()).then(json => {
+      setData1(json);
     }).catch(err => {
       console.log(err);
     })
   }, [])
   return (
     <div>
-      <header><Header /></header>
-      <main><PropertyDescription name={data[0].title} price={data[0].price} key={data[0].id} address={data[0].location.streetAddress} img1={data[0].img} /></main>
+      <header><Header setData={setData} /></header>
+      <main><PropertyDescription name={data1[0].title} price={data1[0].price} amenities={data1[0].amenities} rules={data1[0].rules} key={data1[0].id} address={data1[0].location.streetAddress} img1={data1[0].img} /></main>
       <footer><Footer /></footer>
 
     </div>

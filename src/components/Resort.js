@@ -1,9 +1,10 @@
 import React from 'react';
 import '../scss/Resort.scss'
+import { Link } from 'react-router-dom';
 
 const Resort = (props) => {
   return (
-    <div>
+    <div className='resort'>
       <div className="card">
         <div className='row'>
           <div className='col-4'>
@@ -12,19 +13,19 @@ const Resort = (props) => {
           <div className='col-4'>
             <div className="card-body">
               <div className='name'>
-                <h5 className="card-title">{props.element.name}</h5><p>{props.element.location.streetAddress}</p>
+                <h3 className="card-title">{props.element.title}</h3><p>Location : {props.element.location.streetAddress}</p>
+                <p>Amenities : {props.element.amenities}</p>
+                <p>Rules : {props.element.rules}</p>
               </div>
-              <div className='rating'>
-                <span className="badge bg-success">6.3</span>
-                <span><b>Fabulous</b></span>
+              <div className='rating'>                
               </div>
             </div>
           </div>
           <div className='col-4'>
             <div className='goto'>
-              <span className='price'><b>$ {props.element.price}</b></span>
+              <span className='price'><b>{props.element.price}</b></span>
               <p className='text-success'>Free cancellation</p>
-              <a href="#" className="btn btn-primary rounded-pill">Book Now </a>
+              <Link to={`/propertydescription/${props.element.title}`} className="btn btn-primary rounded-pill"><b>Book Now </b></Link>
             </div>
           </div>
         </div>

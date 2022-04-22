@@ -9,7 +9,8 @@ import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 const PropertyListing = () => {
   let params = useParams();
-  const [data, setData] = useState([  {id: "625ca0f1ac4e5248defdae18",
+  const[data,setData] = useState("")
+  const [data1, setData1] = useState([  {id: "625ca0f1ac4e5248defdae18",
   img: "hotel1.jpg",
   title: "Hotel Marriott",
   description: "3 star hotel",
@@ -28,7 +29,7 @@ const PropertyListing = () => {
       } ])
   useEffect(() => {
     fetch("http://localhost:5005/properties/"+params.variable).then(response => response.json()).then(json => {
-      setData(json);
+      setData1(json);
     }).catch(err => {
       console.log(err);
     })
@@ -37,11 +38,11 @@ const PropertyListing = () => {
 
   return (
     <div>
-      <header><Header /></header>
+      <header><Header setData={setData}/></header>
       <main>
         <div className='parent'>
           <Filter />
-          <FilteredItem data={data} />
+          <FilteredItem data={data1} />
         </div>
       </main>
       <footer><Footer /></footer>

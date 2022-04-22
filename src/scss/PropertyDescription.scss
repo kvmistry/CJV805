@@ -6,6 +6,7 @@
         margin-top: 10px;
         height: 100px;
         .desc {
+            padding-bottom: 50px;
             h3 {
                 font-size: 50px;
                 padding-left: 5px;
@@ -15,24 +16,13 @@
                 font-size: 10px;
             }
         }
-        .desc1 {
-            position: absolute;
-            // top:30%;
-            top: 15%;
-            left: 92%;
-            .btn{
-                border: solid 1px;
-                background-color: rgb(95, 171, 214);
-                color: white;
-                border-radius: px;
-            }
-        }
     }
     .description {
         width: 100%;
         margin-top: 10px;
         display: flex;
         .image {
+            padding-top: 10px;
             width: 70%;
             height: 900px;
             position: relative;
@@ -83,6 +73,19 @@
                         #date {
                             font-size: 12px;
                         }
+                    }
+                }
+                .desc1 {
+                    position: absolute;
+                    top: 50%;
+                    left: 92%;
+                    .btn {
+                        font-size: 16px;
+                        // border: none;
+                        outline: none;
+                        background-color: inherit;
+                        font-family: inherit;
+                        margin: 0;
                     }
                 }
             }

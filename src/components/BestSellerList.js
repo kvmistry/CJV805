@@ -17,26 +17,27 @@ const _rowCount = (variable) => {
 }
 
 const BestSellerList = () => {
-  const [data, setData] = useState([  {id: "625ca0f1ac4e5248defdae18",
-  img: "hotel1.jpg",
-  title: "Hotel Marriott",
-  description: "3 star hotel",
-  price: "$300",
-  location: {
+  const [data, setData] = useState([{
+    id: "625ca0f1ac4e5248defdae18",
+    img: "hotel1.jpg",
+    title: "Hotel Marriott",
+    description: "3 star hotel",
+    price: "$300",
+    location: {
       streetAddress: "1 Dufferin St",
       city: "Toronto",
       state: "Ontario",
       country: "Canada",
       zip: "L2R1T9"
-  },
-  type: "hotel",
-  rules: "Pets allowed, Smoking allowed in smoking room only",
-  amenities: "Wifi, Mini Bar,In house Laundary, Buffet",
-  bestseller: true
-      } ])
+    },
+    type: "hotel",
+    rules: "Pets allowed, Smoking allowed in smoking room only",
+    amenities: "Wifi, Mini Bar,In house Laundary, Buffet",
+    bestseller: true
+  }])
   useEffect(() => {
     fetch("http://localhost:5005/properties/bestseller?bestseller=true").then(response => response.json()).then(json => {
-      console.log('qqqqqqqqqqqqqqqqqqqqqqqq',json);
+      console.log('qqqqqqqqqqqqqqqqqqqqqqqq', json);
       setData(json);
     }).catch(err => {
       console.log(err);
@@ -47,7 +48,7 @@ const BestSellerList = () => {
   let row = _rowCount(data);
   return (
     <div className='property1'>
-      <h3>Some of the Best Selling Properties ...</h3>
+      <h2>Some of the Best Selling Properties ...</h2>
       {(
         () => {
           let count = 0;
@@ -55,9 +56,8 @@ const BestSellerList = () => {
           for (let i = 0; i < row; i++) {
             x.push(<div className='row'>
               {data.slice(count, count + 4).map((element) => {
-
                 return (
-                  <BestSeller img={element.img} name={element.title} id ={element.id} key={element.id} />
+                  <BestSeller img={element.img} name={element.title} id={element.id} key={element.id} />
                 )
               })
               }

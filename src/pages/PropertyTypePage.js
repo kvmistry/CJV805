@@ -6,8 +6,10 @@ import { useState, useEffect } from 'react';
 import AllItems from '../components/AllItems';
 import Header from '../components/Header.js';
 import Footer from '../components/Footer.js';
+import { useParams } from 'react-router-dom';
 
 const PropertyTypePage = () => {
+  const params = useParams()
   let a = [];
   let count = 0;
   const [data, setData] = useState([  {id: "625ca0f1ac4e5248defdae18",
@@ -28,7 +30,8 @@ const PropertyTypePage = () => {
   bestseller: true
       } ])
   useEffect(() => {
-    fetch("http://localhost:5005/properties/bestseller?bestseller=true").then(response => response.json()).then(json => {
+    let url = (params.data)?"http://localhost:5005/properties/"+params.data:"http://localhost:5005/properties"
+    fetch(url).then(response => response.json()).then(json => {
     
       setData(json);
     }).catch(err => {
@@ -38,7 +41,7 @@ const PropertyTypePage = () => {
 
   return (
     <div>
-      <Header />
+      <Header setData={setData} />
       <div className='parent'>
         <Filter />
         <div className='container'>

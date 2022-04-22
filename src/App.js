@@ -23,6 +23,7 @@ const App = () => {
         <Route path="propertydescription/:name" element={<PropertyDescriptionPage />} />
         <Route path="property-sorting/:variable" element={<PropertyListing />} />
         <Route path="propertytypepage" element={<PropertyTypePage />} />
+        <Route path="propertytypepage/:data" element={<PropertyTypePage />} />
       </Routes>
     </BrowserRouter>
   )
