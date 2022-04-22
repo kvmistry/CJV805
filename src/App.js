@@ -5,12 +5,14 @@ import PropertyListing from './pages/PropertyListing';
 import PropertyDescriptionPage from './pages/PropertyDescriptionPage';
 import PropertyTypePage from './pages/PropertyTypePage';
 import New from './pages/New';
+import UserDashboard from './pages/DashboardUser';
 
 import {
   BrowserRouter,
   Routes,
   Route,
 } from "react-router-dom";
+
 
 const App = () => {
   return (
@@ -24,6 +26,7 @@ const App = () => {
         <Route path="property-sorting/:variable" element={<PropertyListing />} />
         <Route path="propertytypepage" element={<PropertyTypePage />} />
         <Route path="propertytypepage/:data" element={<PropertyTypePage />} />
+        <Route path="dashboard" element={<UserDashboard />} />
       </Routes>
     </BrowserRouter>
   )
